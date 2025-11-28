@@ -1,0 +1,38 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Attendance extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'work_date',
+        'clock_in',
+        'break_start',
+        'break_end',
+        'clock_out',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    
+    public function status(): string
+    {
+        if ($this->clock_in && !$this->clock_out) {
+            if ($this->break_start && !$this->break_end) {
+                return '休憩中';
+            }
+            return '勤務中';
+        }
+
+        return '勤務外';
+    }
+}
+

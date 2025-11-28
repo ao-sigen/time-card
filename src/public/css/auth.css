@@ -1,0 +1,23 @@
+.login-form {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.login-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+.status-message {
+    color: green;
+    background-color: #e0ffe0;
+    border: 1px solid #00aa00;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

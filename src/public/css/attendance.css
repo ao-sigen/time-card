@@ -1,0 +1,109 @@
+/* 全体レイアウト */
+.attendance-container {
+    max-width: 500px;
+    margin: 60px auto;
+    text-align: center;
+    font-family: "Hiragino Sans", "メイリオ", sans-serif;
+}
+
+/* 見出し */
+.attendance-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* 勤務状態（勤務外・勤務中など） */
+.attendance-container p strong {
+    display: inline-block;
+    background-color: #f3f3f3; /* 薄い灰色 */
+    color: #555;               /* 濃いめの灰色 */
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* 日付 */
+.attendance-container p:nth-of-type(2) {
+    font-size: 16px;
+    color: #000;
+    margin-top: 20px;
+}
+
+/* 現在時刻（中央・大きく） */
+.attendance-container p:nth-of-type(3) {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    margin: 30px 0;
+}
+
+/* ボタンの共通スタイル */
+button,
+.btn {
+    font-size: 16px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: 0.2s;
+}
+
+/* 黒ボタン（出勤・退勤） */
+.btn-black {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-black:hover {
+    background-color: #555;
+}
+
+/* 白ボタン（休憩入り・休憩戻り） */
+.btn-white {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-white:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* ホバー時 */
+.attendance-container button:hover {
+    opacity: 0.8;
+}
+
+/* 「お疲れさまでした」メッセージ */
+.attendance-container p:last-of-type {
+    font-size: 18px;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* --- 共通レイアウトの調整 --- */
+
+/* ヘッダーの高さを一定に保つ */
+.header {
+    height: 70px; /* ログイン画面と同じ高さに固定 */
+    display: flex;
+    align-items: center;
+    background-color: #000; /* 念のため黒背景を明示 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ロゴ画像サイズを統一 */
+.logo-img {
+    width: 180px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* メイン領域の余白調整 */
+main {
+    padding-top: 40px; /* ヘッダーにかぶらないように少し下げる */
+}

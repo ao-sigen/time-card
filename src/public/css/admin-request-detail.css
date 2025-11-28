@@ -1,0 +1,97 @@
+/* ページ全体 */
+.attendance-detail-container {
+    background-color: #f5f5f5; /* 薄いグレー */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* タイトル */
+.attendance-title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* 各データ項目（名前・日付） */
+.attendance-item {
+    display: flex;
+    margin-bottom: 4px;
+    padding: 16px;
+    background-color: #ffffff; /* 白背景 */
+    border-radius: 6px;
+    color: #333333; /* 濃い目のグレー文字 */
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 軽い影で浮かせる */
+}
+
+.attendance-item label {
+    width: 200px;
+    font-weight: bold;
+}
+
+/* フォームフィールド（出勤・退勤など） */
+.attendance-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;        /* ← 間隔を短くした */
+    padding: 16px;             /* ← 白背景部分を広くした */
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: #333333;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+
+.attendance-field label {
+    width: 200px;        /* ← 余裕を持たせて揃える */
+    font-weight: bold;
+}
+
+
+.attendance-field input,
+.attendance-field textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-left: 10px;
+}
+
+/* チルダ記号（～）間隔 */
+.attendance-field .tilde {
+    margin: 0 40px;   /* ← 少し広げて見やすく */
+    font-weight: bold;
+}
+
+
+/* ボタン */
+.attendance-buttons {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.attendance-buttons .btn-primary {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.attendance-buttons .btn-primary:hover {
+    opacity: 0.8;
+}
+
+/* 承認待ちメッセージ */
+.attendance-buttons p {
+    color: #ff0000;
+    font-weight: bold;
+}
+

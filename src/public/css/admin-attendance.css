@@ -1,0 +1,79 @@
+/* 背景全体 */
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+/* メインコンテナ */
+.admin-attendance-container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* タイトル（左寄せ） */
+.admin-attendance-container h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* テーブル全体 */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff; /* ヘッダー含め白背景 */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ヘッダー（白背景・薄い線） */
+.attendance-table thead th {
+    padding: 12px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ボディ行 */
+.attendance-table tbody td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* 明細ボタン（白・影なし・枠線のみ） */
+.btn-detail {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    text-decoration: none;
+    color: #333333;
+    transition: 0.2s;
+}
+
+.btn-detail:hover {
+    background-color: #f7f7f7;
+}
+
+.attendance-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.date-input {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
