@@ -2,8 +2,8 @@
 
 ## 環境構築
 **Dockerビルド**
-1. `git clone git@github.com:git@github.com:ao-sigen/free-market.git
-2. cd coachtech/free-market
+1. `git clone :git@github.com:ao-sigen/time-card.git
+2. cd coachtech/time-card
 3. DockerDesktopアプリを立ち上げる
 4. `docker-compose up -d --build`
 
