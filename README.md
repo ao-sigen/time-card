@@ -48,6 +48,11 @@ php artisan db:seed
 php artisan storage:link
 ```
 
+http://localhost/admin/login 管理者ログイン画面
+　　email：（admin@example.com）
+　　password：(password123)
+http://localhost/　一般ログイン画面
+
 ## 使用技術(実行環境)
 - PHP8.2.29
 - Laravel8.83.29
